@@ -1,0 +1,130 @@
+.cartitems {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cartitems-format img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cartitems-quantity {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cartitems-remove-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.cartitems-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cartitems-total {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cartitems-total-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cartitems-promocode {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.cartitems-promobox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.cartitems-promobox input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.cartitems-promobox button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.cartitems-promobox button:hover {
+  background-color: #45a049;
+}
+
+.cartitems-promocode p {
+  margin-bottom: 10px;
+}
+
+.cartitems button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cartitems button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .cartitems-format-main {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+  .cartitems-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+}
